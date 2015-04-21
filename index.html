@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Test Peliculas-Angular</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+	<body ng-app='appPelis'>
+
+	<div ng-controller='ListaController'>
+		<ul ng-repeat='pelicula in peliculas'>
+			<div id="container">
+				<div id="girando">
+					<span id="uno" style="background: url({{pelicula.image1}}) no-repeat;"/><img src="caratulas/cajita.png"/></span>
+					<span id="dos"></span>
+					<span id="tres" style="background: url({{pelicula.image2}}) no-repeat;"><img src="caratulas/cajita2.png"/></span>
+				</div>
+			</div>
+		</ul>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="js/script.js"></script>
+	</body>
+</html>

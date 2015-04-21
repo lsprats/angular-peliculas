@@ -1,0 +1,79 @@
+#container {
+	float:left;
+	overflow:hidden;
+	height:230px;
+	padding-top:20px;
+	width:200px;
+	border:0px solid gray;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	-o-perspective: 600px;
+	-ms-perspective: 600px;
+	perspective: 600px;
+}
+
+#girando {
+		margin: 0px auto;
+		width: 180px;
+
+		-moz-transition:all 1s; 		
+		-webkit-transition:all 1s; 		
+		-o-transition:all 1s; 		
+		-ms-transition:all 1s; 		
+		transition:all 1s; 		
+		
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		
+}
+
+#container:hover > #girando{
+	-moz-transform: rotateY(-180deg);		
+	-ms-transform: rotateY(-180deg);		
+	-o-transform: rotateY(-180deg);		
+	-webkit-transform: rotateY(-180deg);		
+	transform: rotateY(-180deg);		
+}
+
+#girando span {
+	position: absolute;
+	height: 215px;
+}
+
+#uno {
+	background-position:23px 6px !important;
+	width: 180px;
+	overflow:hidden;
+	-webkit-transform: rotateY(0deg) translateZ(0px);
+	-moz-transform: rotateY(0deg) translateZ(0px);
+	-ms-transform: rotateY(0deg) translateZ(0px);
+	-o-transform: rotateY(0deg) translateZ(0px);
+	transform: rotateY(0deg) translateZ(0px);
+}
+
+
+#dos {
+	width:10px !important;						
+	height: 199px !important;
+	margin-top: 6px;
+	background:url('caratulas/lado.jpg') no-repeat;
+	-webkit-transform: rotateY(92deg) translateZ(168px);
+	-ms-transform: rotateY(92deg) translateZ(168px);
+	-o-transform: rotateY(92deg) translateZ(168px);
+	-moz-transform: rotateY(92deg) translateZ(168px);
+	transform: rotateY(92deg) translateZ(168px);
+}
+
+#tres {
+	background-position:8px 6px !important;
+	width: 180px;
+	overflow:hidden;
+	-webkit-transform: rotateY(-180deg) translateZ(10px);
+	-ms-transform: rotateY(-180deg) translateZ(10px);
+	-o-transform: rotateY(-180deg) translateZ(10px);
+	-moz-transform: rotateY(-180deg) translateZ(10px);
+	transform: rotateY(-180deg) translateZ(10px);
+}
